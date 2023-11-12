@@ -13,8 +13,8 @@ mvn spring-boot:run -Dspring-boot.run.arguments="--spring.profiles.active=local"
 #### Docker
 
 ```sh
-docker build -t quizroulette/legacy-service:v1.0.0 .
-docker push quizroulette/legacy-service:v1.0.0
+docker build -t quizroulette/legacy-service:v2.0.0 .
+docker push quizroulette/legacy-service:v2.0.0
 ```
 
 #### K8
