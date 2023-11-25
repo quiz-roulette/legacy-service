@@ -65,7 +65,8 @@ public class QuestionBankClient {
         try {
             return client.newCall(request).execute();
         } catch (IOException e) {
-            log.error(e.getLocalizedMessage());
+
+//            log.error(e.getLocalizedMessage());
             throw new RuntimeException("Unable to connect to the server");
         }
     }

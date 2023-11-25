@@ -13,9 +13,19 @@ mvn spring-boot:run -Dspring-boot.run.arguments="--spring.profiles.active=local"
 #### Docker
 
 ```sh
-docker build -t quizroulette/legacy-service:v1.0.0 .
-docker push quizroulette/legacy-service:v1.0.0
+docker build -t quizroulette/legacy-service:v2.0.0 .
+docker push quizroulette/legacy-service:v2.0.0
 ```
+
+#### GraalVM
+
+```agsl
+mvn clean package -Pnative
+```
+
+References:
+- https://www.graalvm.org/latest/docs/getting-started/macos/
+- [Unable to Build GraalVM Image for Spring Boot 3](https://stackoverflow.com/q/77468542/5809504)
 
 #### K8
 
